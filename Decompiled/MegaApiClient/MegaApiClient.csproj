@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\Old C# Projets\MegaChecker\MegaChecker\bin\Debug\MegaApiClient.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{09E9FAD2-1C48-460E-A170-28D0A41DAC49}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>MegaApiClient</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <ApplicationVersion>1.10.3.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>CG.Web.MegaApiClient</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cryptography\BigInteger.cs" />
+    <Compile Include="ApiRequestFailedEventArgs.cs" />
+    <Compile Include="Exceptions.cs" />
+    <Compile Include="1Exceptions.cs" />
+    <Compile Include="2Exceptions.cs" />
+    <Compile Include="3Exceptions.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Interface\IAccountInformation.cs" />
+    <Compile Include="Interface\IStorageMetrics.cs" />
+    <Compile Include="Interface\IMegaApiClient.cs" />
+    <Compile Include="Interface\INode.cs" />
+    <Compile Include="Interface\INodeCrypto.cs" />
+    <Compile Include="Interface\IFileAttribute.cs" />
+    <Compile Include="Interface\FileAttributeType.cs" />
+    <Compile Include="Interface\NodeType.cs" />
+    <Compile Include="Interface\ISession.cs" />
+    <Compile Include="Interface\SessionStatus.cs" />
+    <Compile Include="Interface\IWebClient.cs" />
+    <Compile Include="MegaApiClient.cs" />
+    <Compile Include="Node.cs" />
+    <Compile Include="PublicNode.cs" />
+    <Compile Include="FileAttribute.cs" />
+    <Compile Include="NodeExtensions.cs" />
+    <Compile Include="Options.cs" />
+    <Compile Include="Stream\BufferedStream.cs" />
+    <Compile Include="Stream\CancellableStream.cs" />
+    <Compile Include="Stream\MegaAesCtrStreamCrypter.cs" />
+    <Compile Include="Stream\MegaAesCtrStreamDecrypter.cs" />
+    <Compile Include="Stream\MegaAesCtrStream.cs" />
+    <Compile Include="Stream\ProgressionStream.cs" />
+    <Compile Include="WebClient_HttpClient.cs" />
+    <Compile Include="Serialization\AccountInformation.cs" />
+    <Compile Include="Serialization\1AccountInformation.cs" />
+    <Compile Include="Serialization\AnonymousLogin.cs" />
+    <Compile Include="Serialization\Attributes.cs" />
+    <Compile Include="Serialization\CreateNode.cs" />
+    <Compile Include="Serialization\Delete.cs" />
+    <Compile Include="Serialization\DownloadFileAttribute.cs" />
+    <Compile Include="Serialization\1DownloadFileAttribute.cs" />
+    <Compile Include="Serialization\DownloadUrl.cs" />
+    <Compile Include="Serialization\1DownloadUrl.cs" />
+    <Compile Include="Serialization\2DownloadUrl.cs" />
+    <Compile Include="Serialization\GetDownloadLink.cs" />
+    <Compile Include="Serialization\GetNodes.cs" />
+    <Compile Include="Serialization\1GetNodes.cs" />
+    <Compile Include="Serialization\GetNodesResponseConverter.cs" />
+    <Compile Include="Serialization\Login.cs" />
+    <Compile Include="Serialization\1Login.cs" />
+    <Compile Include="Serialization\Logout.cs" />
+    <Compile Include="Serialization\Move.cs" />
+    <Compile Include="Serialization\NodeConverter.cs" />
+    <Compile Include="Serialization\PreLogin.cs" />
+    <Compile Include="Serialization\1PreLogin.cs" />
+    <Compile Include="Serialization\Rename.cs" />
+    <Compile Include="Serialization\RequestBase.cs" />
+    <Compile Include="Serialization\SessionHistory.cs" />
+    <Compile Include="Serialization\1SessionHistory.cs" />
+    <Compile Include="Serialization\Share.cs" />
+    <Compile Include="Serialization\1Share.cs" />
+    <Compile Include="Serialization\2Share.cs" />
+    <Compile Include="Serialization\ShareNode.cs" />
+    <Compile Include="Serialization\UploadUrl.cs" />
+    <Compile Include="Serialization\1UploadUrl.cs" />
+    <Compile Include="Cryptography\CachedCryptoTransform.cs" />
+    <Compile Include="Cryptography\Crypto.cs" />
+    <Compile Include="Cryptography\Crc32.cs" />
+    <Compile Include="Cryptography\PBKDF2.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
