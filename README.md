@@ -1,6 +1,7 @@
 # Mega.nz C# SDK Reversed
 - Translate this into any desired language to create a rate limit free Mega.nz API.
-
+- Please use responsibly and do not abuse this functionality.
+  
 # API
 ```cs
     private static readonly Uri s_baseApiUri = new Uri("https://g.api.mega.co.nz/cs");
